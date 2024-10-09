@@ -39,7 +39,7 @@ def main():
                 file.write(f"{number} ")
         print(f"Fibonacci numbers less than {args.limit} have been written to {args.output_file}")
     except IOError as e:
-        print(f"Error: file {e} not found")
+        print(f"Error, file you're writing to is probably protected {e}")
 
 if __name__ == "__main__":
     main()
